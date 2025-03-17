@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="game-hub.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Game Hub</h1>
+    </header>
+    <main>
+        <section id="games">
+            <h2>Select a Game</h2>
+            <div class="game-list">
+                <div class="game" data-game="fishing-game">
+                    <img src="fishing-game-thumbnail.jpg" alt="Fishing Game">
+                    <h3>Fishing Game</h3>
+                </div>
+                <!-- Add more games here -->
+            </div>
+        </section>
+        <section id="game-details" class="hidden">
+            <h2>Game Details</h2>
+            <div id="game-info">
+                <!-- Game information will be loaded here -->
+            </div>
+            <button id="play-game-btn">Play Game</button>
+        </section>
+    </main>
+    <script src="game-hub.js"></script>
+</body>
+</html>
