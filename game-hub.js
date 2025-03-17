@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function loadGameDetails(gameName) {
-        // Here you can add more detailed information about each game
         let gameDetails = "";
         switch (gameName) {
             case "fishing-game":
