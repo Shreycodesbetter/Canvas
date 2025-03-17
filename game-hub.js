@@ -29,6 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
                 gameUrl = "https://sites.google.com/view/unblocked-games-x6/snow-rider-3d";
                 break;
+            case "rooftop-snipers":
+                gameDetails = `
+                    <h3>Rooftop Snipers</h3>
+                    <p>Engage in a fun and intense two-player sniper shootout on rooftops!</p>
+                `;
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/rooftop-snipers/";
+                break;
             // Add more cases for other games
         }
         gameInfoDiv.innerHTML = gameDetails;
