@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const gameDetailsSection = document.getElementById("game-details");
     const gameInfoDiv = document.getElementById("game-info");
     const playGameBtn = document.getElementById("play-game-btn");
+    const gameFrameSection = document.getElementById("game-frame");
+    const gameIframe = document.getElementById("game-iframe");
 
     games.forEach(game => {
         game.addEventListener("click", function() {
@@ -14,6 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
     playGameBtn.addEventListener("click", function() {
         const gameName = playGameBtn.getAttribute("data-game");
         playGame(gameName);
+    });
+
+    document.addEventListener("keypress", function(event) {
+        if (event.key === "z" || event.key === "Z") {
+            loadExternalSite("https://issaquah.instructure.com/");
+        }
     });
 
     function loadGameDetails(gameName) {
@@ -35,9 +43,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function playGame(gameName) {
         switch (gameName) {
             case "fishing-game":
-                window.location.href = "https://shreycodesbetter.github.io/Fisch/";
+                gameIframe.src = "https://shreycodesbetter.github.io/Fisch/";
+                gameFrameSection.classList.remove("hidden");
                 break;
-            // Add cases to redirect to other game pages
+            // Add cases to load other games
         }
+    }
+
+    function loadExternalSite(url) {
+        window.location.href = url;
     }
 });
