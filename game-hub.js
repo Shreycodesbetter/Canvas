@@ -18,12 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         playGame(gameName);
     });
 
-    document.addEventListener("keypress", function(event) {
-        if (event.key === "z" || event.key === "Z") {
-            loadExternalSite("https://issaquah.instructure.com/");
-        }
-    });
-
     function loadGameDetails(gameName) {
         let gameDetails = "";
         switch (gameName) {
@@ -31,6 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 gameDetails = `
                     <h3>Fishing Game</h3>
                     <p>Try to catch as many fish as you can and upgrade your rod to catch even more valuable fish!</p>
+                `;
+                break;
+            case "snow-rider-3d":
+                gameDetails = `
+                    <h3>Snow Rider 3D</h3>
+                    <p>Enjoy a thrilling snow ride and avoid obstacles to reach the end!</p>
                 `;
                 break;
             // Add more cases for other games
@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 gameIframe.src = "https://shreycodesbetter.github.io/Fisch/";
                 gameFrameSection.classList.remove("hidden");
                 break;
+            case "snow-rider-3d":
+                gameIframe.src = "https://sites.google.com/site/thegamecompilation/snow-rider-3d#h.29qvw5o0hrzl";
+                gameFrameSection.classList.remove("hidden");
+                break;
             // Add cases to load other games
         }
-    }
-
-    function loadExternalSite(url) {
-        window.location.href = url;
     }
 });
