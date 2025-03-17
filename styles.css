@@ -1,14 +1,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to bottom right, #1f3c88, #1c2b5a);
     color: white;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -28,7 +28,7 @@ main {
 }
 
 .game {
-    background: linear-gradient(to bottom, #3a6073, #16222a);
+    background: linear-gradient(to bottom, #43cea2, #185a9d);
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -54,7 +54,7 @@ main {
 }
 
 #game-details {
-    background: linear-gradient(to top right, #2a5298, #1e3c72);
+    background: linear-gradient(to top right, #00c6ff, #0072ff);
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -66,7 +66,7 @@ main {
     margin-top: 10px;
     border: none;
     cursor: pointer;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to right, #f7971e, #ffd200);
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -75,6 +75,6 @@ main {
 }
 
 #play-game-btn:hover {
-    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    background: linear-gradient(to right, #ffd200, #f7971e);
     transform: scale(1.1);
 }
