@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function playGame(gameName) {
         switch (gameName) {
             case "fishing-game":
-                window.location.href = "index.html"; // Assuming the fishing game is in index.html
+                window.location.href = "https://shreycodesbetter.github.io/Fisch/";
                 break;
             // Add cases to redirect to other game pages
         }
