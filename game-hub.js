@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.addEventListener("keypress", function(event) {
         if (event.key === "z" || event.key === "Z") {
-            loadExternalSite("https://issaquah.instructure.com/grades");
+            loadExternalSite("https://issaquah.instructure.com/");
         }
     });
 
