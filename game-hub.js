@@ -3,18 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const gameDetailsSection = document.getElementById("game-details");
     const gameInfoDiv = document.getElementById("game-info");
     const playGameBtn = document.getElementById("play-game-btn");
-    const aboutDevBtn = document.getElementById("about-dev-btn");
-    const aboutDevSection = document.getElementById("about-dev");
 
     games.forEach(game => {
         game.addEventListener("click", function() {
             const gameName = this.getAttribute("data-game");
             loadGameDetails(gameName);
         });
-    });
-
-    aboutDevBtn.addEventListener("click", function() {
-        aboutDevSection.classList.toggle("hidden");
     });
 
     function loadGameDetails(gameName) {
@@ -42,47 +36,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
                 gameUrl = "https://canvas-login-instructure.github.io/macvg/yohoho.html";
                 break;
-            case "basket-random":
+            case "cookie-clicker":
                 gameDetails = `
-                    <h3>Basket Random</h3>
-                    <p>Play a random and fun basketball game with quirky physics!</p>
+                    <h3>Cookie Clicker</h3>
+                    <p>Click the cookie to produce more cookies and grow your cookie empire!</p>
                 `;
-                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/basket-random/";
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/cookie-clicker/";
                 break;
             case "boxing-random":
                 gameDetails = `
                     <h3>Boxing Random</h3>
-                    <p>Enjoy a hilarious and random boxing game with unpredictable physics!</p>
+                    <p>Engage in random boxing matches and fight your way to victory!</p>
                 `;
                 gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/boxing-random/";
-                break;
-            case "cookie-clicker":
-                gameDetails = `
-                    <h3>Cookie Clicker</h3>
-                    <p>Click to produce cookies and unlock upgrades to produce even more cookies!</p>
-                `;
-                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/cookie-clicker/";
-                break;
-            case "volley-random":
-                gameDetails = `
-                    <h3>Volley Random</h3>
-                    <p>Play a fun and chaotic volleyball game with random physics!</p>
-                `;
-                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/volley-random/";
-                break;
-            case "soccer-random":
-                gameDetails = `
-                    <h3>Soccer Random</h3>
-                    <p>Enjoy a random and fun soccer game with quirky physics!</p>
-                `;
-                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/soccer-random/";
-                break;
-            case "snow-rider-3d":
-                gameDetails = `
-                    <h3>Snow Rider 3D</h3>
-                    <p>Experience the thrill of skiing down snowy slopes, dodging obstacles, and collecting gifts!</p>
-                `;
-                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/snow-ride/";
                 break;
             // Add more cases for other games
         }
@@ -96,4 +62,35 @@ document.addEventListener("DOMContentLoaded", function() {
             window.open("https://issaquah.instructure.com/", "_blank");
         }
     });
-});
+
+    // Add new game links
+    const gameLinks = [
+        { id: "game1", url: "/macvg/projects/1/", name: "1" },
+        { id: "game339", url: "/macvg/projects/1v1-soccer/", name: "1 on 1 Soccer" },
+        { id: "game2", url: "/macvg/projects/1v1lol/", name: "1v1.lol" },
+        { id: "game329", url: "/macvg/projects/color-match/", name: "1010 Color Match" },
+        { id: "game340", url: "/macvg/projects/1010-deluxe/", name: "1010 Deluxe" },
+        { id: "game4", url: "/macvg/projects/10-minutes-till-dawn/", name: "10 Minutes Till Dawn" },
+        { id: "game6", url: "/macvg/projects/2048/", name: "2048" },
+        { id: "game7", url: "/macvg/projects/2048-multitask/", name: "2048 Multitask" },
+        { id: "game328", url: "/macvg/projects/3d-bowling/", name: "3D Bowling" },
+        { id: "game330", url: "/macvg/projects/pandas-japan/", name: "3 Pandas in Japan" },
+        { id: "game331", url: "/macvg/projects/8-ball/", name: "8 Ball Pool" },
+        { id: "game8", url: "/macvg/projects/9007199254740992/", name: "900719925474" },
+        { id: "game9", url: "/macvg/projects/achievementunlocked/", name: "Achievement Unlocked" },
+        { id: "game332", url: "/macvg/projects/adam-eve/", name: "Adam and Eve 5 Part 1" },
+        { id: "game333", url: "/macvg/projects/adam-eve-2/", name: "Adam and Eve 5 Part 2" },
+        { id: "game10", url: "/macvg/projects/adarkroom/", name: "A Dark Room" },
+        { id: "game11", url: "/macvg/projects/adrenalinechallenge/", name: "Adrenaline Challenge" },
+        { id: "game291", url: "/macvg/projects/adventure-anxiety/", name: "Adventure with Anxiety" },
+        { id: "game12", url: "/macvg/projects/adventure-drivers/", name: "Adventure Drivers" },
+        { id: "game13", url: "/macvg/projects/ages-of-conflict/", name: "Ages of Conflict" },
+        { id: "game14", url: "/macvg/projects/alienhominid/", name: "Alien Hominid" },
+        { id: "game15", url: "/macvg/projects/amidst-the-clouds/", name: "Amidst the Clouds" },
+        { id: "game16", url: "/macvg/projects/among-us/", name: "Among Us" },
+        { id: "game17", url: "/macvg/projects/angry-sharks/", name: "Angry Sharks" },
+        { id: "game334", url: "/macvg/projects/apple-shooter/", name: "Apple Shooter" },
+        { id: "game18", url: "/macvg/projects/aquapark-slides/", name: "Aquapark Slides" },
+        { id: "game338", url: "/macvg/projects/arcane-archer/", name: "Arcane Archer" },
+        { id: "game19", url: "/macvg/projects/avalanche/", name: "Avalanche" },
+        { id: "game337", url: "/macvg/projects/awesome-tanks-2/", name: "Awesome
