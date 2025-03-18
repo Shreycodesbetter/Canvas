@@ -29,6 +29,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
                 gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/rooftop-snipers/";
                 break;
+            case "yo-ho-ho":
+                gameDetails = `
+                    <h3>Yo Ho Ho</h3>
+                    <p>Play as a pirate and battle other players to become the top pirate!</p>
+                `;
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/yohoho.html";
+                break;
+            case "basket-random":
+                gameDetails = `
+                    <h3>Basket Random</h3>
+                    <p>Play a random and fun basketball game with quirky physics!</p>
+                `;
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/basket-random/";
+                break;
             // Add more cases for other games
         }
         gameInfoDiv.innerHTML = gameDetails;
