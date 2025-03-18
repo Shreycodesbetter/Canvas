@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <h3>Snow Rider 3D</h3>
                     <p>Experience the thrill of skiing down snowy slopes, dodging obstacles, and collecting gifts!</p>
                 `;
-                gameUrl = "https://github.com/lcpsgames/snowrider";
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/snow-ride/";
                 break;
             // Add more cases for other games
         }
