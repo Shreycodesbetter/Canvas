@@ -77,6 +77,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
                 gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/soccer-random/";
                 break;
+            case "snow-rider-3d":
+                gameDetails = `
+                    <h3>Snow Rider 3D</h3>
+                    <p>Experience the thrill of skiing down snowy slopes, dodging obstacles, and collecting gifts!</p>
+                `;
+                gameUrl = "https://github.com/lcpsgames/snowrider";
+                break;
             // Add more cases for other games
         }
         gameInfoDiv.innerHTML = gameDetails;
