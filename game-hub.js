@@ -22,13 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
                 gameUrl = "https://shreycodesbetter.github.io/Fisch/";
                 break;
-            case "snow-rider-3d":
-                gameDetails = `
-                    <h3>Snow Rider 3D</h3>
-                    <p>Enjoy a thrilling snow ride and avoid obstacles to reach the end!</p>
-                `;
-                gameUrl = "https://sites.google.com/view/unblocked-games-x6/snow-rider-3d";
-                break;
             case "rooftop-snipers":
                 gameDetails = `
                     <h3>Rooftop Snipers</h3>
@@ -42,4 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
         playGameBtn.href = gameUrl;
         gameDetailsSection.classList.remove("hidden");
     }
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "z" || event.key === "Z") {
+            window.open("https://issaquah.instructure.com/", "_blank");
+        }
+    });
 });
