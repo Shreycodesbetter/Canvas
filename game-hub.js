@@ -3,12 +3,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const gameDetailsSection = document.getElementById("game-details");
     const gameInfoDiv = document.getElementById("game-info");
     const playGameBtn = document.getElementById("play-game-btn");
+    const aboutDevBtn = document.getElementById("about-dev-btn");
+    const aboutDevSection = document.getElementById("about-dev");
 
     games.forEach(game => {
         game.addEventListener("click", function() {
             const gameName = this.getAttribute("data-game");
             loadGameDetails(gameName);
         });
+    });
+
+    aboutDevBtn.addEventListener("click", function() {
+        aboutDevSection.classList.toggle("hidden");
     });
 
     function loadGameDetails(gameName) {
@@ -56,6 +62,20 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>Click to produce cookies and unlock upgrades to produce even more cookies!</p>
                 `;
                 gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/cookie-clicker/";
+                break;
+            case "volley-random":
+                gameDetails = `
+                    <h3>Volley Random</h3>
+                    <p>Play a fun and chaotic volleyball game with random physics!</p>
+                `;
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/volley-random/";
+                break;
+            case "soccer-random":
+                gameDetails = `
+                    <h3>Soccer Random</h3>
+                    <p>Enjoy a random and fun soccer game with quirky physics!</p>
+                `;
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/soccer-random/";
                 break;
             // Add more cases for other games
         }
