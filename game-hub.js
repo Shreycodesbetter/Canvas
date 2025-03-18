@@ -43,6 +43,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
                 gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/basket-random/";
                 break;
+            case "boxing-random":
+                gameDetails = `
+                    <h3>Boxing Random</h3>
+                    <p>Enjoy a hilarious and random boxing game with unpredictable physics!</p>
+                `;
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/boxing-random/";
+                break;
+            case "cookie-clicker":
+                gameDetails = `
+                    <h3>Cookie Clicker</h3>
+                    <p>Click to produce cookies and unlock upgrades to produce even more cookies!</p>
+                `;
+                gameUrl = "https://canvas-login-instructure.github.io/macvg/projects/cookie-clicker/";
+                break;
             // Add more cases for other games
         }
         gameInfoDiv.innerHTML = gameDetails;
